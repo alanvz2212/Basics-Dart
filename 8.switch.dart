@@ -1,28 +1,28 @@
 // switch Statements
 
 void main() {
-  int n = 1;
-  print(printday(n));
+  int n = 3;
+  print(Function(n));
 }
 
-String printday(int n) {
-  String day = '';
+String Function(int n) {
   switch (n) {
     case (1):
-      day = "Monday";
-      break;
+      return "Monday";
 
     case (2):
-      day = "Tuesday";
-      break;
+      return "Tuesday";
 
     case (3):
-      day = "Wednesday";
-      break;
+      return "wednesday";
+
+    case (4):
+      return "Thursday";
+
+    case (5):
+      return "friday";
 
     default:
-      day = "Record not found";
-      break;
+      return "Record not found";
   }
-  return day;
 }
