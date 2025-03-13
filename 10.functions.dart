@@ -1,37 +1,26 @@
-// void main() {
-//   String result = FunctionName("Alan");
-//   print(result);
-
-//   int Value = FunctionnNumber(22);
-//   print(Value);
-// }
-
-// String FunctionName(String n) {
-//   return n + "Varghese";
-// }
-
-// int FunctionnNumber(int x) {
-//   return x;
-// }
+// Functions
 
 void main() {
-  // Alan alan =new Alan();
+  String name = "Bibin";
+  print(name.toUpperCase());
 
-  String result = Alan.FunctionName("Alan ");
+  String result = ClassName.FunctionName("Alan");
   print(result);
-  int value = Alan.FunctionAge(20);
+
+  int value = ClassName.FunctionAge(22);
   print(value);
 }
 
-class Alan {
-  static FunctionName(String n) {
-    return n + "Varghese";
+class ClassName {
+  static String FunctionName(String n) {
+    return n + " Varghese";
   }
 
-  static FunctionAge(int s) {
-    return 2 * 100;
+  static int FunctionAge(int s) {
+    return s;
   }
 }
 
-// Object
+
+// object
 // static
