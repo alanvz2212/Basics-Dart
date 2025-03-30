@@ -1,11 +1,22 @@
 void main() {
-  MobilePhone mobilephone = new MobilePhone();
+  MobilePhone mobilePhone = new MobilePhone("16", "Samsung");
+  print(mobilePhone);
 }
 
 class Electronics {
-  double height = 2.0;
-  double weight = 6.0;
-  double thickness = 23.0;
+  //super Class
+  Electronics(String Brand) {
+    print("Electroinics Constructor - $Brand");
+  }
+
+  double height = 10;
+  double weight = 10;
+  double thickness = 10;
 }
 
-class MobilePhone extends Electronics {}
+class MobilePhone extends Electronics {
+  //sub class
+  MobilePhone(String Model, String Brand) : super(Brand) {
+    print("MobilePhone constructor - $Model");
+  }
+}
