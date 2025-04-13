@@ -1,13 +1,26 @@
-class Mathematics {
+void main() {
+  constructors construct = new constructors(23, 45);
+  int n1 = 23;
+  int n2 = 45;
+
+  int addResult = construct.addition();
+  print(addResult);
+  int subResult = construct.subtraction();
+  print(subResult);
+  int mulResult = construct.multiplication();
+  print(mulResult);
+  double divResult = construct.division();
+  print(divResult);
+}
+
+class constructors {
   int n1 = 0;
   int n2 = 0;
-  Mathematics(int n1, int n2) {
-    //parametrised Constructor
-    print("Class is Created"); //Constructor Function
+
+  constructors(int n1, int n2) {
+    print("Object is Created");
     this.n1 = n1;
-  }
-  Mathematics.namedConstructor() {
-    print("This is a named Constructor");
+    this.n2 = n2;
   }
 
   int addition() {
@@ -25,17 +38,4 @@ class Mathematics {
   double division() {
     return this.n1 / this.n2;
   }
-}
-
-void main() {
-  Mathematics mathematics = new Mathematics.namedConstructor();
-
-  int addResult = mathematics.addition();
-  print(addResult);
-  int subResult = mathematics.subtraction();
-  print(subResult);
-  int mulResult = mathematics.multiplication();
-  print(mulResult);
-  // double divResult = mathematics.division();
-  // print(divResult);
 }
