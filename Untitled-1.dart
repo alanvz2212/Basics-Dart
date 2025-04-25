@@ -43,11 +43,22 @@
 //   }
 // }
 
+//
+
+// import 'dart:io';
+
+// void main() async {
+//   Platform.isWindows;
+//   {
+//     await Process.run('shutdown', ['/s', '/t', '5']);
+//   }
+// }
+
 import 'dart:io';
 
 void main() async {
   Platform.isWindows;
   {
-    await Process.run('shutdown', ['/r', '/t', '2']);
+    Process.run('Shutdown', ['/s', '/t', '5']);
   }
 }
