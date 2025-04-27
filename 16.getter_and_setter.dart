@@ -1,30 +1,18 @@
 // Gettter and Setter
 
 class Mathematics {
-  int num = 0;
-  int den = 0;
   int numerator = 0;
-  int dinominator = 0;
-  // void prinFraction() {
-  //   print("$numerator/$dinominator");
-  // }
-
-  void set numerator(int val) {
-    num = val;
-  }
-
-  void set dinominator(int val) {
-    den = val;
+  int denominator = 0;
+  void printFraction() {
+    print("$numerator / $denominator");
   }
 }
 
 void main() {
-  Mathematics mathematics = new Mathematics();
-  mathematics.numerator = 5; //setter
-  mathematics.dinominator = 10; //setter
-  mathematics.prinFraction(); //getter
+  Mathematics maths = new Mathematics();
+  maths.numerator = 5;
+  maths.denominator = 10;
 }
-
 
 // step 1. Creating a simple class
 // Step 2. Defining numerator and denominator by using int  data type And initialise some value as zero.
