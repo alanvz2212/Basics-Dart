@@ -1,15 +1,21 @@
+// getters and setters
 
+class Mathematics {
+  int numerator = 0;
+  int dinominator = 0;
+  void functionprint() {
+    print("$numerator/$dinominator");
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
+void main() {
+  Mathematics maths = new Mathematics();
+  maths.numerator = 10; //setter
+  maths.dinominator = 5; //setter
+  print(maths.numerator);
+  print(maths.dinominator);
+  maths.functionprint();
+}
 
 
 
