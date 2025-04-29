@@ -1,27 +1,27 @@
-void main() {
-  ElectronicsItem electronicsitem = new ElectronicsItem();
-  print(electronicsitem);
-}
+// void main() {
+//   ElectronicsItem electronicsitem = new ElectronicsItem();
+//   print(electronicsitem);
+// }
 
-abstract class ElectronicsItem {
-  void watching();
-  void watching1();
+// abstract class ElectronicsItem {
+//   void watching();
+//   void watching1();
 
-  void function1() {
-    print("function1");
-  }
+//   void function1() {
+//     print("function1");
+//   }
 
-  void function2() {
-    print("function2");
-  }
-}
+//   void function2() {
+//     print("function2");
+//   }
+// }
 
-class MobilePhone extends ElectronicsItem {
-  void watching() {
-    print("Watching ....");
-  }
+// class MobilePhone extends ElectronicsItem {
+//   void watching() {
+//     print("Watching ....");
+//   }
 
-  void watching2() {
-    print("Watching ....");
-  }
-}
+//   void watching2() {
+//     print("Watching ....");
+//   }
+// }
