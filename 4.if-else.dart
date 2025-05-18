@@ -45,19 +45,12 @@ void main() {
 
 String FunctionName(int age) {
   if (age >= 18 && age < 100) {
-    return "You can vote";
+    return "You Can Vote";
   } else if (age <= 0) {
-    return "Are you born ?";
+    return "Are You Born";
   } else if (age >= 100) {
-    return "You are not dead ?";
+    return "Are You Living";
   } else {
-    return "You cant Vote";
+    return "You Cant vote";
   }
 }
-
-
-
-
-
-
-

@@ -1,12 +1,12 @@
 // Ternary operator
-void main() {
-  int age = 17;
-  String result =
-      age >= 18
-          ? "You are elligible to vote"
-          : "You are not elligilble to vote";
-  print(result);
-}
+// void main() {
+//   int age = 17;
+//   String result =
+//       age >= 18
+//           ? "You are elligible to vote"
+//           : "You are not elligilble to vote";
+//   print(result);
+// }
 
 // Ternary operator
 
@@ -41,20 +41,20 @@ void main() {
 //   return result;
 // }
 
-// void main() {
-//   int age = 18;
-//   String vote = VoteFunctionName(age);
-//   print(vote);
-// }
+void main() {
+  int age = 18;
+  String vote = VoteFunctionName(age);
+  print(vote);
+}
 
-// String VoteFunctionName(int age) {
-//   String result =
-//       age >= 18 && age <= 100
-//           ? "You can vote"
-//           : age <= 0
-//           ? "Are you born"
-//           : age >= 100
-//           ? "Are you Living"
-//           : "You cant vote";
-//   return result;
-// }
+String VoteFunctionName(int age) {
+  String result =
+      age >= 18 && age <= 100
+          ? "You can vote"
+          : age <= 0
+          ? "Are you born"
+          : age >= 100
+          ? "Are you Living"
+          : "You cant vote";
+  return result;
+}
