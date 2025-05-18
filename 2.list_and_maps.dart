@@ -26,7 +26,7 @@ void main() {
   String place = 'Mukaluvilayil\'s House peringand p.o. Adur Pathanamthitta';
   double marks = 22.7;
   bool male = true;
-  Set<String> Alphabets = {'1', '2', '3', '4', '5'};
+  List<String> Alphabets = ['1', '2', '5', '3', '4'];
   Map<String, dynamic> mydata = {
     "Age": age,
     "Name": name,
@@ -34,6 +34,10 @@ void main() {
     "Marks": marks,
     "Gender": male,
   };
+
+  Alphabets.sort();
+  Alphabets.add('6');
+  Alphabets.addAll(['7', '8', '9', '10']);
   print(mydata);
   print(Alphabets);
 }
